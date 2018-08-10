@@ -7,6 +7,10 @@
 The word **tecomate** is pronunced [te.koˈma.te] in Spanish  and probably
 [te.koˈmeit] in English is the name of tree that grows in Mexico 
 and Central American countries. 
+<p align="center">
+  <img src="./figures/tecomate.png" 
+   width="400" title="tecomate tree">
+</p>
 </br>
 
 We use **TECOmate** to name our Git repository that hosts the implementation
@@ -14,7 +18,7 @@ of an hybrid achitecture for the enforcement of smart contracts.
 Hybrid means that it is composed of on and off blockchain
 components. 
 
-**The main idea:** is plit the clauses of the smart
+**The main idea:** split the clauses of the smart
 contract of interest into two sets and enforce them
 separately:
 
@@ -22,7 +26,7 @@ separately:
 * off-blockchain set: enforced by a smart contract running off-blocchain.
 
 As shown in the figure, to implement such architeture we 
-integrate several smaet contract technologies and
+integrate several smart contract technologies and
 tools.
 
 <p align="center">
