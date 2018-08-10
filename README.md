@@ -27,7 +27,7 @@ tools.
 
 <p align="center">
   <img src="./figures/ccc-ethereum-integrationToolsTechnologies.png" 
-   width="500" title="ccc-ethereum integration, tools and technologies">
+   width="800" title="ccc-ethereum integration, tools and technologies">
 </p>
 
 
