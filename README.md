@@ -25,6 +25,19 @@ separately:
 * on--blockchain set: enforced by a smart contract running on-blockchain.
 * off-blockchain set: enforced by a smart contract running off-blocchain.
 
+The main arguments in support of hybrid architectures are
+detailed in 
+[On and Off-Blockchain Enforcement Of Smart Contracts](https://arxiv.org/pdf/1805.00626.pdf "position paper")). In summary the argument is that:
+
+* the hybrid approach help in meeting some QoS requirements imposed on
+smart contracts that neither on of off blockchain approaches
+can meet individually. 
+
+* application that involve several
+smart contracts running independent on and off blockchain
+components will become common practice in the near future. 
+
+
 As shown in the figure, to implement such architeture we 
 integrate several smart contract technologies and
 tools.
@@ -33,6 +46,16 @@ tools.
   <img src="./figures/ccc-ethereum-integrationToolsTechnologies.png" 
    width="800" title="ccc-ethereum integration, tools and technologies">
 </p>
+
+An elaborated discussion of the components and their
+integration is presented in 
+[Implementation of Smart Contracts Using Hybrid Architectures with On- and Off-Blockchain Components](https://arxiv.org/pdf/1808.00093.pdf "implementation paper")).
+The following explanation of the figures is a brief summary:
+
+* Contract Compliance Checker:
+* epromela:
+
+
 
 
 # Installation
