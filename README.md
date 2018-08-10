@@ -9,7 +9,7 @@ The word **tecomate** is pronunced [te.koˈma.te] in Spanish  and probably
 and Central American countries. 
 <p align="center">
   <img src="./figures/tecomate.png" 
-   width="250" title="tecomate tree">
+   width="300" title="tecomate tree">
 </p>
 </br>
 
