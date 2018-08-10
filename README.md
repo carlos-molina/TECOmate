@@ -12,8 +12,23 @@ and Central American countries.
 We use **TECOmate** to name our Git repository that hosts the implementation
 of an hybrid achitecture for the enforcement of smart contracts. 
 Hybrid means that it is composed of on and off blockchain
-components. As such its implementation involves the integration of
-several smart contracts tools.
+components. 
+
+**The main idea:** is plit the clauses of the smart
+contract of interest into two sets and enforce them
+separately:
+
+* on--blockchain set: enforced by a smart contract running on-blockchain.
+* off-blockchain set: enforced by a smart contract running off-blocchain.
+
+As shown in the figure, to implement such architeture we 
+integrate several smaet contract technologies and
+tools.
+
+<p align="center">
+  <img src="./figures/ccc-ethereum-integrationToolsTechnologies.png" 
+   width="500" title="ccc-ethereum integration, tools and technologies">
+</p>
 
 
 # Installation
