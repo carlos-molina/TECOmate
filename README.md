@@ -93,26 +93,25 @@ original contract written in English.
 ## Hybrid architecture, technologies tools and mathematics
 The hybrid architecture that we have implemented for
 the enforcement of smart contracts like the example
-discussed above is shown in the figure. The architecture
-is a combination of several practical technologies and 
-tools underpinned by Mathematical formalisms which
-in the current implementation are aimed at preventing
-the deployment of unsound smart contracts.
+discussed above is shown in the figure. 
 
 <p align="center">
   <img src="./figures/ccc-ethereum-integrationToolsTechnologies.png" 
    width="800" title="ccc-ethereum integration, tools and technologies">
 </p>
+
+The architecture
+is a combination of several practical technologies and 
+tools underpinned by Mathematical formalisms which
+in the current implementation are aimed at preventing
+the deployment of unsound smart contracts.
+
 
 An in-depth discussion of the components and their
 integration is presented in 
 [Implementation of Smart Contracts Using Hybrid Architectures with On- and Off-Blockchain Components](https://arxiv.org/pdf/1808.00093.pdf "implementation paper")).
 In this section, we will present only a summary.
 
-<p align="center">
-  <img src="./figures/ccc-ethereum-integrationToolsTechnologies.png" 
-   width="800" title="ccc-ethereum integration, tools and technologies">
-</p>
 
 * *CCC(Contract Compliance Checker):* 
   is a tool implemented for contract
