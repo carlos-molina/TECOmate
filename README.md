@@ -64,7 +64,7 @@ schematically firstly, as shown in the figure.
    data-seller contract example.">
 </p>
 
-### On and off blockchain enforcemement
+#### On and off blockchain enforcemement
 Let us assume henceforth that the buter and the store have agreed to use a 
 hybrid architecture where the operation *pay* will be enforced on blockchain 
 and all other operations, off blockchain. An abstract view of the corresponding 
