@@ -86,16 +86,16 @@ using the tools and technologies shown in the
 following figure.
 
 
-<p align="center">
-  <img src="./figures/ccc-ethereum-integrationToolsTechnologies.png" 
-   width="800" title="ccc-ethereum integration, tools and technologies">
-</p>
-
-An elaborated discussion of the components and their
+An in-depth discussion of the components and their
 integration is presented in 
 [Implementation of Smart Contracts Using Hybrid Architectures with On- and Off-Blockchain Components](https://arxiv.org/pdf/1808.00093.pdf "implementation paper")).
 In this section, we will present only a summary of the
 functionality of the components. 
+
+<p align="center">
+  <img src="./figures/ccc-ethereum-integrationToolsTechnologies.png" 
+   width="800" title="ccc-ethereum integration, tools and technologies">
+</p>
 
 * Contract Compliance Checker: 
   It is a Java application composed of several files, RESTful interfaces,
