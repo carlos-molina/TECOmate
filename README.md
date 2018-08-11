@@ -64,7 +64,7 @@ schematically firstly, as shown in the figure.
    data-seller contract example.">
 </p>
 
-#### On and off blockchain enforcemement
+### On and off blockchain enforcemement
 Let us assume henceforth that the buter and the store have agreed to use a 
 hybrid architecture where the operation *pay* will be enforced on blockchain 
 and all other operations, off blockchain. An abstract view of the corresponding 
@@ -79,9 +79,12 @@ hybrid architecture is shown in the figure:
 
 ## Hybrid architecture, tools and technologies
 
-As shown in the figure, to implement such architeture we 
-integrate several smart contract technologies and
-tools.
+We have implemented an hybrid architecture that
+can be used for the enforcement of smart
+contracts (like the example discussed above) 
+using the tools and technologies shown in the
+following figure.
+
 
 <p align="center">
   <img src="./figures/ccc-ethereum-integrationToolsTechnologies.png" 
