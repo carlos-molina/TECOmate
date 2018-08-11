@@ -129,7 +129,7 @@ functionality of the components.
 * client: is an ordinary computer instrumented to send
          to the CCC the contractual events (for example,
          *BuyReq*, *pay*, *rej*, etc.) that correspond 
-         to the execution of contractual operations
+         to the execution of the contractual operations
           estipulated in the contract. 
 
 * epromela: 
