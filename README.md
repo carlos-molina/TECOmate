@@ -134,7 +134,8 @@ In this section, we will present only a summary.
 
 * *dataseller.drl:* 
   is the off blockchain component of the smart contract. It is written
-  in the drools language and deployed on the CCC.
+  in the drools language and deployed on the CCC. We call it also the
+  Centralised  Smart Contract (SCc).
 
 * *ethereum client in the rinkeby ethereum network:*
   is an ethereum node
@@ -146,7 +147,7 @@ In this section, we will present only a summary.
   is the on blockchain component of the smart contract. It is written
   in the Solidity language and deployed on the ethereum client
   running in the rinkeby ethereum network. 
-  on the CCC.
+  on the CCC. We call it also the Decentralised Smarc Contract (SCd).
 
 * *web3j:* is library that offfers communication facilities that
          allow Java applications like the CCC to communicate
