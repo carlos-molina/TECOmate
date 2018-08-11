@@ -72,7 +72,7 @@ hybrid architecture is shown in the figure:
 
 <p align="center">
   <img src="./figures/smartcontractsplit.png" 
-   width="300" title="smart contract split">
+   width="400" title="smart contract split">
 </p>
 
 
