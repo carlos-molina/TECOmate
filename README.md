@@ -175,9 +175,7 @@ In this section, we will present only a summary.
          To generate all the execution sequences and store them
          in a local disk (see *subfolders
          with N exec sequences*), we have implemented 
-
          * Python script  
-
          * linux shell scrypt
 
 
