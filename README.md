@@ -181,10 +181,12 @@ In this section, we will present only a summary.
 
 
 # Installation
+This section provides only a summary of the
+installation. The installation procedure will be
+detailed in [TECOmateUserGuide_ver12Aug2018.pdf]
+(./TECOmateUserGuide\_ver12Aug2018.pdf) file which
+is currently under preparation.
 
-The directions for installation of epromela are documented in
-the [UserGuide_v1.2.pdf](./UserGuide_v1.2.pdf) file. The document
-also includes examples that demonstrate its operation.
 
 # Contributors
 
