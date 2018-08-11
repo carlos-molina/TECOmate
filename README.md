@@ -57,12 +57,24 @@ written in English language.
 ```
 To convert the contract written in natural language into a
 smart contract equivalent, it is convenient to  represented it 
-schematically ifirstly, as shown in the figure.
+schematically firstly, as shown in the figure.
 
 <p align="center">
   <img src="./figures/datasellercontractschema.png" width="550" title="Schema 
    data-seller contract example.">
 </p>
+
+### On and off blockchain enforcemement
+Let us assume henceforth that the buter and the store have agreed to use a 
+hybrid architecture where the operation *pay* will be enforced on blockchain 
+and all other operations, off blockchain. An abstract view of the corresponding 
+hybrid architecture is shown in the figure:
+
+<p align="center">
+  <img src="./figures/smartcontractsplit.png" 
+   width="800" title="smart contract split">
+</p>
+
 
 
 ## Hybrid architecture, tools and technologies
