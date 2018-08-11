@@ -84,8 +84,6 @@ can be used for the enforcement of smart
 contracts (like the example discussed above) 
 using the tools and technologies shown in the
 following figure.
-
-
 An in-depth discussion of the components and their
 integration is presented in 
 [Implementation of Smart Contracts Using Hybrid Architectures with On- and Off-Blockchain Components](https://arxiv.org/pdf/1808.00093.pdf "implementation paper")).
