@@ -95,9 +95,10 @@ functionality of the components.
    width="800" title="ccc-ethereum integration, tools and technologies">
 </p>
 
-* CCC(Contract Compliance Checker): 
-  is a Java application composed of several files, RESTful interfaces,
-  and a database. At its core lies a FSM that grants and removes rights, 
+* CCC(Contract Compliance Checker): is a tool implemented for contract
+  enforcement. It is a Java application composed of several files, RESTful 
+  interfaces, and a database. 
+   At its core lies a FSM that grants and removes rights, 
   obligations and prohibitions to the contracting parties as the execution 
   of the contract progresses. To enforce a smart contract with the CCC, the 
   developer (i) writes the contract in the Drools language and stores it 
@@ -132,7 +133,7 @@ functionality of the components.
          to the execution of the contractual operations
           estipulated in the contract. 
 
-* epromela: 
+* epromela: is a tool for building models of smart contracts that can be validated by the Spin model checker.  
 
 
 
