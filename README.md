@@ -263,14 +263,25 @@ prompt.
 
 ## 4. Deploy the collectPayment.sol contract in the  Rinkeby testnet
 
-1. use remix ide to compile and deploy the collectPayment.sol smart contract
-        - [remix.ethereum.org](http://remix.ethereum.org)
-2. if there are no errors during compilation go to Run tab
-3. choose Injected web3 for “Environment” (it will use metamask to deploy the smart contract)
-4. make sure the correct account is selected in “Account”
-5. Click deploy button
-6. click submit in metamask to deploy the collectPayment.sol smart contract to Rinkeby testnet
-7. add contract address in ccc-ethereum.properties file contractAddress field
+1. go to remix ide to compile and deploy the collectPayment.sol smart contract.
+   - [remix.ethereum.org](http://remix.ethereum.org)
+
+1. if the compilation is successful go to Run tab.
+
+1. in the "Environment" box (right side to the screen)
+   choose "Injected web3". This option will use metamask 
+   to deploy the smart contract.
+
+1. make sure the correct account is selected in the “Account” box.
+
+1. click the "Deploy" button.
+
+1. click "submit" in metamask to deploy the collectPayment.sol 
+   smart contract to Rinkeby testnet.
+
+1. add the contract address to the contractAddress field of
+   the ccc-ethereum.properties file.
+ 
 
 
 
