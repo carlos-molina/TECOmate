@@ -190,6 +190,7 @@ is currently under preparation.
 
 1. follow instructions to install geth
         - [github.com/ethereum/go-ethereum/wiki/Building-Ethereum](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum)
+
 1. follow instructions to create a new account in rinkeby testnet using:
         - geth —rinkeby account new
         - add account password to accountPassword field in 
@@ -197,7 +198,7 @@ is currently under preparation.
           (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
 
 1. display the list of current accounts in rinkeby testnet to verify 
-   that the account has been created and the disk location of the
+   that the account has been created and to see disk location of the
    keystore file:
    - geth —rinkeby acount list
      - copy address of account created 
