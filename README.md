@@ -179,13 +179,13 @@ In this section, we will present only a summary.
          * Python script  
          * linux shell scrypt
 
-         The two scripts are responsible for storing all the
-         execution sequences encoded in the smart contract in a
-         local folder as shown in the figure.
+         The two scripts are responsible for storing 
+         in a local folder (see figure) all the
+         execution sequences encoded in the smart contract. 
 
          <p align="center">
           <img src="./figures/folderwithexecsequences.png" 
-          width="800" title="folder with exec sequences used by epromela">
+          width="400" title="folder with exec sequences used by epromela">
          </p>
 
 
@@ -289,9 +289,9 @@ prompt.
 1. start geth using rinkeby testnet and enabling json-rpc api:
    - `% geth --rinkeby   --syncmode "fast" --cache=1024 --rpc console`
 
-1. go to  CCCRestClient folder and start the client. It will retrieve
-   the execution sequences from a local folders
-   (dataseller.pmlExex1, dataseller.pmlExecSeq2, etc.) and 
+1. go to  the CCCRestClient folder and start the client. It will retrieve
+   the execution sequences from the local folders
+   (dataseller.pmlExec1, dataseller.pmlExecSeq2, etc.) and 
    send them to the CCC:
    - `% ./runClient.sh`
 
