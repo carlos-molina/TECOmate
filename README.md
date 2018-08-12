@@ -187,7 +187,7 @@ detailed in [TECOmateUserGuide_ver12Aug2018.pdf](TECOmateUsersGuide_ver12Aug2018
 is currently under preparation.
 
 In the following directions, we use `%` to represent the linux
-prompt.....................
+prompt.
 
 ## 1. Install ethereum v1.8.13-stable and create a new account
 
@@ -230,15 +230,21 @@ prompt.....................
 ## 3. Compile contract written in solidity and create wraper code to deploy it
 
 1. install solc compiler: ([solidity.readthedocs.io/en/v0.4.24/installing-solidity.html](http://solidity.readthedocs.io/en/v0.4.24/installing-solidity.html))
-        - npm install -g solc
-2. install web3j command-line tool v3.5.0
+        - `% npm install -g solc`
+1. install web3j command-line tool v3.5.0
         - [docs.web3j.io/command_line.html](https://docs.web3j.io/command_line.html)
-3. go to solidity-contracts folder
-4. compile collectPayment.sol using the solc compiler:
-        - solc collectPayment.sol --bin --abi --optimize -o .
-5. execute web3j command-line tool to create java wrappers for collectPayment solidity contract
-        - web3j solidity generate collectPayment.bin collectPayment.abi -p uk.ac.ncl.ethereum.contract -o .
-6. copy generated contract folder to conch/CCCRest-ear-commons/src/main/java/uk/ac/ncl/ethereum
+
+1. go to solidity-contracts folder
+
+1. compile the `collectPayment.sol` contract using the solc compiler:
+        - `% solc collectPayment.sol --bin --abi --optimize -o` 
+
+1. execute web3j command-line tool to create java wrappers for 
+   the `collectPayment.sol` solidity contract
+        - `% web3j solidity generate collectPayment.bin collectPayment.abi -p uk.ac.ncl.ethereum.contract -o`
+
+1. copy the generated contract folder to 
+     conch/CCCRest-ear-commons/src/main/java/uk/ac/ncl/ethereum
 
 
 
@@ -246,7 +252,7 @@ prompt.....................
 
 ---
 
-## 4. Deploy collectPayment.sol contract in Rinkeby testnet
+## 4. Deploy the collectPayment.sol contract in the  Rinkeby testnet
 
 1. use remix ide to compile and deploy the collectPayment.sol smart contract
         - [remix.ethereum.org](http://remix.ethereum.org)
