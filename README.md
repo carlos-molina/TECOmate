@@ -211,12 +211,12 @@ is currently under preparation.
 
 ## 2. Install metamask
 
-1. install metamask browser add-on from [metamask.io](https://metamask.io/)
-1. create an account for metamask
+1. install metamask add-on [metamask.io](https://metamask.io/) to your browser
+1. create  a metamask account
 1. choose rinkeby testnet
 1. import to metamask the account created previously using geth
-     - use geth —rinkeby acount list  to find where the keystore file is stored
-1. buy ether using rinkeby faucet [www.rinkeby.io](https://www.rinkeby.io/#faucet)
+     - use `% geth —rinkeby acount list`  to find where the keystore file is stored
+1. buy ether tokens from rinkeby faucet [www.rinkeby.io](https://www.rinkeby.io/#faucet)
 
 
 
