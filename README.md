@@ -186,13 +186,16 @@ installation. The installation procedure will be
 detailed in [TECOmateUserGuide_ver12Aug2018.pdf](TECOmateUsersGuide_ver12Aug2018.pdf) file which
 is currently under preparation.
 
+In the following directions, we use `%` to represent the linux
+prompt.
+
 ## 1. Install ethereum v1.8.13-stable and create a new account
 
 1. follow instructions to install geth
         - [github.com/ethereum/go-ethereum/wiki/Building-Ethereum](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum)
 
 1. follow instructions to create a new account in rinkeby testnet using:
-        - geth —rinkeby account new
+        - `% geth —rinkeby account new`
         - add account password to accountPassword field in 
           ccc-ethereum.properties file 
           (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
@@ -200,7 +203,7 @@ is currently under preparation.
 1. display the list of current accounts in rinkeby testnet to verify 
    that the account has been created and to see disk location of the
    keystore file:
-   - geth —rinkeby acount list
+   - `% geth —rinkeby acount list`
      - copy address of account created 
                      e.g. 0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
      - add keystore file path to keyStoreFilePath field 
@@ -224,7 +227,7 @@ is currently under preparation.
 
 ---
 
-## 3. Compile contract and create wrapper for deployed contract
+## 3. Compile contract written in solidity and create wraper code to deploy it
 
 1. install solc compiler: ([solidity.readthedocs.io/en/v0.4.24/installing-solidity.html](http://solidity.readthedocs.io/en/v0.4.24/installing-solidity.html))
         - npm install -g solc
