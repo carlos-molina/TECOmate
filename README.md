@@ -186,6 +186,25 @@ installation. The installation procedure will be
 detailed in [TECOmateUserGuide_ver12Aug2018.pdf](TECOmateUsersGuide_ver12Aug2018.pdf) file which
 is currently under preparation.
 
+## Installation and creating new account for ethereum v1.8.13-stable
+
+1) follow instructions to install geth
+* github.com/ethereum/go-ethereum/wiki/Building-Ethereum
+
+1) follow instructions to create a new account in 
+   rinkeby testnet using:
+* geth —rinkeby account new
+* add account password to accountPassword field 
+  in ccc-ethereum.properties file 
+  (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
+
+1) show the list of current accounts in rinkeby 
+   testnet to verify the account is created and 
+   where the keystore file is stored:
+* geth —rinkeby acount list
+ * copy address of account created e.g. 0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
+ * add keystore file path to keyStoreFilePath field in ccc-ethereum.properties file (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
+
 
 
 # Contributors
