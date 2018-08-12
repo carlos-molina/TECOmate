@@ -198,11 +198,11 @@ is currently under preparation.
         - geth —rinkeby acount list
                 - copy address of account created e.g. 0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
                 - add keystore file path to keyStoreFilePath field in ccc-ethereum.properties file  (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
-1. test number
-   1) smsms
-   1) djdjdjdjdj
-   1) shshshsh
-   1) dhdhdhd
+[comment]: <> 1. test number
+[comment]: <> 1) smsms
+[comment]: <> 1) djdjdjdjdj
+[//]: <> 1) shshshsh
+[comment]: <> 1) dhdhdhd
 
 ---
 
