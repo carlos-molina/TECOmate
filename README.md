@@ -159,34 +159,34 @@ In this section, we will present only a summary.
           estipulated in the contract. 
 
 * *epromela:* 
-         is a tool for building models of smart contracts 
-         that can be validated by the Spin model checker
-         against correctness properties expressed in
-         Linear Temporal Logic (LTL) formulae.
-         We use the promela tool for veriying the logical
-         correctness of the contract at design time and
-         for generating execution sequences (test cases)
-         for testing its actual implementation.  
-         As suggested by the thick desconnected arrow,
-         we model check the model and produce execution
-         sequences off line, that is, before deploying
-         and executing the *dataseller.drl* and *collectPayment.sol*
-         contracts. 
-         To generate all the execution sequences and store them
-         in a local disk (see *subfolders
-         with N exec sequences*), we have implemented 
+  is a tool for building models of smart contracts 
+  that can be validated by the Spin model checker
+  against correctness properties expressed in
+  Linear Temporal Logic (LTL) formulae.
+  We use the promela tool for veriying the logical
+  correctness of the contract at design time and
+  for generating execution sequences (test cases)
+  for testing its actual implementation.  
+  As suggested by the thick desconnected arrow,
+  we model check the model and produce execution
+  sequences off line, that is, before deploying
+  and executing the *dataseller.drl* and *collectPayment.sol*
+  contracts. 
+  To generate all the execution sequences and store them
+  in a local disk (see *subfolders
+  with N exec sequences*), we have implemented 
 
-         * Python script  
-         * linux shell scrypt
+  * Python script
+  * linux shell scrypt
 
-         The two scripts are responsible for storing 
-         in a local folder (see figure) all the
-         execution sequences encoded in the smart contract. 
+  The two scripts are responsible for storing 
+  in a local folder (see figure) all the
+  execution sequences encoded in the smart contract. 
 
-         <p align="center">
-          <img src="./figures/folderwithexecsequences.png" 
-          width="400" title="folder with exec sequences used by epromela">
-         </p>
+  <p align="center">
+    <img src="./figures/folderwithexecsequences.png" 
+    width="400" title="folder with exec sequences used by epromela">
+  </p>
 
 
 # Installation
