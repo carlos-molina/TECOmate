@@ -179,6 +179,15 @@ In this section, we will present only a summary.
          * Python script  
          * linux shell scrypt
 
+         The two scripts are responsible for storing all the
+         execution sequences encoded in the smart contract in a
+         local folder as shown in the figure.
+
+         <p align="center">
+          <img src="./figures/folderwithexecsequences.png" 
+          width="800" title="folder with exec sequences used by epromela">
+         </p>
+
 
 # Installation
 This section provides only a summary of the
@@ -268,16 +277,23 @@ prompt.
 
 ---
 
-## 5. Execute smart contracts in CCC and Ethereum
+## 5. Execute the two smart contracts: in CCC and Ethereum
 
-1. start jboss EAP server:
-        - ./run.sh
-2. deploy a new version of the CCC with the included java wrapper for the collectPayment.sol smart contract
-        - mvn clean package jboss-as:deploy
-3. start geth using rinkeby testnet and enabling json-rpc api:
-        - geth --rinkeby   --syncmode "fast" --cache=1024 --rpc console
-4. go to  CCCRestClient folder to start the client that sends the sequences to the CCC
-        - ./runClient.sh
+1. start jboss EAP server in your local computer:
+   - `% ./run.sh`
+
+1. deploy an instance of the CCC with the included java wrapper 
+   for the collectPayment.sol smart contract
+   - `% mvn clean package jboss-as:deploy`
+
+1. start geth using rinkeby testnet and enabling json-rpc api:
+   - `% geth --rinkeby   --syncmode "fast" --cache=1024 --rpc console`
+
+1. go to  CCCRestClient folder and start the client. It will retrieve
+   the execution sequences from a local folders
+   (dataseller.pmlExex1, dataseller.pmlExecSeq2, etc.) and 
+   send them to the CCC:
+   - `% ./runClient.sh`
 
 
 
