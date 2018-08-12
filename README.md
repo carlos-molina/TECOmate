@@ -187,7 +187,7 @@ detailed in [TECOmateUserGuide_ver12Aug2018.pdf](TECOmateUsersGuide_ver12Aug2018
 is currently under preparation.
 
 In the following directions, we use `%` to represent the linux
-prompt.
+prompt.....................
 
 ## 1. Install ethereum v1.8.13-stable and create a new account
 
