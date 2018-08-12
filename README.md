@@ -200,7 +200,7 @@ prompt.
 
 ## 1. Install ethereum v1.8.13-stable and create a new account
 
-1. follow instructions to install geth
+1. follow instructions to install geth:
         - [github.com/ethereum/go-ethereum/wiki/Building-Ethereum](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum)
 
 1. follow instructions to create a new account in rinkeby testnet using:
@@ -223,12 +223,16 @@ prompt.
 
 ## 2. Install metamask
 
-1. install metamask add-on [metamask.io](https://metamask.io/) to your browser
-1. create  a metamask account
-1. choose rinkeby testnet
-1. import to metamask the account created previously using geth
+1. install metamask add-on [metamask.io](https://metamask.io/) to your browser.
+
+1. create  a metamask account.
+
+1. choose rinkeby testnet.
+
+1. import to metamask the account created previously using geth:
      - use `% geth —rinkeby acount list`  to find where the keystore file is stored
-1. buy ether tokens from rinkeby faucet [www.rinkeby.io](https://www.rinkeby.io/#faucet)
+
+1. buy ether tokens from rinkeby faucet [www.rinkeby.io](https://www.rinkeby.io/#faucet).
 
 
 
@@ -238,18 +242,18 @@ prompt.
 
 ## 3. Compile contract written in solidity and create wraper code to deploy it
 
-1. install solc compiler: ([solidity.readthedocs.io/en/v0.4.24/installing-solidity.html](http://solidity.readthedocs.io/en/v0.4.24/installing-solidity.html))
+1. install solc compiler: ([solidity.readthedocs.io/en/v0.4.24/installing-solidity.html](http://solidity.readthedocs.io/en/v0.4.24/installing-solidity.html)):
    - `% npm install -g solc`
-1. install web3j command-line tool v3.5.0
+1. install web3j command-line tool v3.5.0:
    - [docs.web3j.io/command_line.html](https://docs.web3j.io/command_line.html)
 
-1. go to solidity-contracts folder
+1. go to solidity-contracts folder.
 
 1. compile the `collectPayment.sol` contract using the solc compiler:
    - `% solc collectPayment.sol --bin --abi --optimize -o` 
 
 1. execute web3j command-line tool to create java wrappers for 
-   the `collectPayment.sol` solidity contract
+   the `collectPayment.sol` solidity contract:
    - `% web3j solidity generate collectPayment.bin collectPayment.abi -p uk.ac.ncl.ethereum.contract -o`
 
 1. copy the generated contract folder to 
@@ -277,7 +281,7 @@ prompt.
 1. click the "Deploy" button.
 
 1. click "submit" in metamask to deploy the collectPayment.sol 
-   smart contract to Rinkeby testnet.
+   smart contract to rinkeby testnet.
 
 1. add the contract address to the contractAddress field of
    the ccc-ethereum.properties file.
@@ -288,13 +292,13 @@ prompt.
 
 ---
 
-## 5. Execute the two smart contracts: in CCC and Ethereum
+## 5. Execute the two smart contracts: in CCC and rinkeby ethereum testnet
 
 1. start jboss EAP server in your local computer:
    - `% ./run.sh`
 
 1. deploy an instance of the CCC with the included java wrapper 
-   for the collectPayment.sol smart contract
+   for the collectPayment.sol smart contract:
    - `% mvn clean package jboss-as:deploy`
 
 1. start geth using rinkeby testnet and enabling json-rpc api:
