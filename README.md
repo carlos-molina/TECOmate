@@ -199,10 +199,11 @@ is currently under preparation.
 1. display the list of current accounts in rinkeby testnet to verify 
    that the account has been created and the disk location of the
    keystore file:
-        - geth —rinkeby acount list
-                - copy address of account created 
+
+   - geth —rinkeby acount list
+     - copy address of account created 
                      e.g. 0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
-                - add keystore file path to keyStoreFilePath field 
+     - add keystore file path to keyStoreFilePath field 
                      in ccc-ethereum.properties file  
                      (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
 
