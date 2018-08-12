@@ -190,10 +190,11 @@ is currently under preparation.
 
 1. follow instructions to install geth
         - [github.com/ethereum/go-ethereum/wiki/Building-Ethereum](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum)
-2. follow instructions to create a new account in rinkeby testnet using:
+1. follow instructions to create a new account in rinkeby testnet using:
         - geth —rinkeby account new
         - add account password to accountPassword field in ccc-ethereum.properties file (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
-3. show the list of current accounts in rinkeby testnet to verify the account is created and where the keystore file is stored:
+
+1. show the list of current accounts in rinkeby testnet to verify the account is created and where the keystore file is stored:
         - geth —rinkeby acount list
                 - copy address of account created e.g. 0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
                 - add keystore file path to keyStoreFilePath field in ccc-ethereum.properties file  (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
