@@ -218,7 +218,7 @@ is currently under preparation.
 
 ---
 
-## 4. Compile contract and create wrapper for deployed contract
+## 3. Compile contract and create wrapper for deployed contract
 
 1. install solc compiler: ([solidity.readthedocs.io/en/v0.4.24/installing-solidity.html](http://solidity.readthedocs.io/en/v0.4.24/installing-solidity.html))
         - npm install -g solc
@@ -237,7 +237,7 @@ is currently under preparation.
 
 ---
 
-## 3. Deploy collectPayment.sol contract in Rinkeby testnet
+## 4. Deploy collectPayment.sol contract in Rinkeby testnet
 
 1. use remix ide to compile and deploy the collectPayment.sol smart contract
         - [remix.ethereum.org](http://remix.ethereum.org)
