@@ -167,14 +167,26 @@ In this section, we will present only a summary.
   correctness of the contract at design time and
   for generating execution sequences (test cases)
   for testing its actual implementation.  
+
+  The code of the epromela tool is stored in the
+  [contraval repository](https://github.com/carlos-molina/contraval) 
+  along with instructions to use it and examples,
+  including a
+  [hello-world example](https://github.com/carlos-molina/contraval/tree/master/examples/helloWorldSmartContractInitOrTO) and
+  the [smart contract example](
+  https://github.com/carlos-molina/contraval/tree/master/examples/datasellercontractTO) discussed above.
+
   As suggested by the thick desconnected arrow,
-  we model check the model and produce execution
+  we use epromela to model check the contract and produce execution
   sequences off line, that is, before deploying
   and executing the *dataseller.drl* and *collectPayment.sol*
   contracts. 
-  To generate all the execution sequences and store them
+
+  To generate all the execution sequences mechanically 
+  and store them
   in a local disk (see *subfolders
-  with N exec sequences*), we have implemented 
+  with N exec sequences*), the contraval repository include
+  two scripts that we have implemented: 
 
   * Python script
   * linux shell scrypt
