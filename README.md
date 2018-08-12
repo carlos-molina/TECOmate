@@ -199,7 +199,6 @@ is currently under preparation.
 1. display the list of current accounts in rinkeby testnet to verify 
    that the account has been created and the disk location of the
    keystore file:
-
    - geth —rinkeby acount list
      - copy address of account created 
                      e.g. 0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
