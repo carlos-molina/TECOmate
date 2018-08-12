@@ -230,18 +230,18 @@ prompt.
 ## 3. Compile contract written in solidity and create wraper code to deploy it
 
 1. install solc compiler: ([solidity.readthedocs.io/en/v0.4.24/installing-solidity.html](http://solidity.readthedocs.io/en/v0.4.24/installing-solidity.html))
-        - `% npm install -g solc`
+   - `% npm install -g solc`
 1. install web3j command-line tool v3.5.0
-        - [docs.web3j.io/command_line.html](https://docs.web3j.io/command_line.html)
+   - [docs.web3j.io/command_line.html](https://docs.web3j.io/command_line.html)
 
 1. go to solidity-contracts folder
 
 1. compile the `collectPayment.sol` contract using the solc compiler:
-- `% solc collectPayment.sol --bin --abi --optimize -o` 
+   - `% solc collectPayment.sol --bin --abi --optimize -o` 
 
 1. execute web3j command-line tool to create java wrappers for 
    the `collectPayment.sol` solidity contract
-- `% web3j solidity generate collectPayment.bin collectPayment.abi -p uk.ac.ncl.ethereum.contract -o`
+   - `% web3j solidity generate collectPayment.bin collectPayment.abi -p uk.ac.ncl.ethereum.contract -o`
 
 1. copy the generated contract folder to 
      conch/CCCRest-ear-commons/src/main/java/uk/ac/ncl/ethereum
