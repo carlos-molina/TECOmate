@@ -172,7 +172,7 @@ In this section, we will present only a summary.
   [contraval repository](https://github.com/carlos-molina/contraval) 
   along with instructions to use it and examples,
   including a
-  [hello-world example](https://github.com/carlos-molina/contraval/tree/master/examples/helloWorldSmartContractInitOrTO) and
+  [Hello World contract example](https://github.com/carlos-molina/contraval/tree/master/examples/helloWorldSmartContractInitOrTO) and
   the [smart contract example](
   https://github.com/carlos-molina/contraval/tree/master/examples/datasellercontractTO) discussed above.
 
@@ -185,7 +185,7 @@ In this section, we will present only a summary.
   To generate all the execution sequences mechanically 
   and store them
   in a local disk (see *subfolders
-  with N exec sequences*), the contraval repository include
+  with N exec sequences*), the contraval repository includes
   two scripts that we have implemented: 
 
   * Python script
