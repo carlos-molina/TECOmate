@@ -216,8 +216,8 @@ prompt.
         - [github.com/ethereum/go-ethereum/wiki/Building-Ethereum](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum)
 
 1. follow instructions to create a new account in rinkeby testnet using:
-        - `% geth —rinkeby account new`
-        - add account password to accountPassword field in 
+   - `% geth —rinkeby account new`
+   - add account password to accountPassword field in 
           ccc-ethereum.properties file 
           (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
 
