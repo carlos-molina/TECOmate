@@ -164,8 +164,8 @@ In this section, we will present only a summary.
   against correctness properties expressed in
   Linear Temporal Logic (LTL) formulae.
   We use the promela tool for 
-  * veriying the logical correctness of the contract at design time and
-  * conformance testing, namely, for generating execution sequences 
+  * *veriying the logical correctness* of the contract at design time and
+  * *conformance testing*, namely, for generating execution sequences 
     (test cases) to test the actual implementation.  
 
   The code of the epromela tool is stored in the
