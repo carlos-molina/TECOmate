@@ -110,6 +110,10 @@ the deployment of unsound smart contracts.
 An in-depth discussion of the components and their
 integration is presented in 
 [Implementation of Smart Contracts Using Hybrid Architectures with On- and Off-Blockchain Components](https://arxiv.org/pdf/1808.00093.pdf "implementation paper")).
+An [8 page version of the report](https://github.com/carlos-molina/TECOmate/blob/master/docs/ImplementationOfSmartContrats_SC2paper.pdf) has been published at
+[SC2](https://lipn.univ-paris13.fr/~cerin/sc2iovsoca2018.html#).
+
+
 In this section, we will present only a summary.
 
 
