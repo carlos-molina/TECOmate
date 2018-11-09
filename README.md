@@ -216,7 +216,8 @@ prompt.
 
 ## 1. Install ethereum v1.8.13-stable and create a new account
 
-1. follow instructions to install geth:
+1. follow instructions to install geth, bear in mind that the
+   initialization of the blockchain takes about eight hours:
    - [github.com/ethereum/go-ethereum/wiki/Building-Ethereum](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum)
 
 1. follow instructions to create a new account in rinkeby testnet using:
