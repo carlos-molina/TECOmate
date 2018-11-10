@@ -224,7 +224,7 @@ prompt.
    - `% geth —rinkeby account new`
    - add account password to accountPassword field in 
           ccc-ethereum.properties file 
-          (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
+          (tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
 
 1. display the list of current accounts in rinkeby testnet to verify 
    that the account has been created and to see disk location of the
@@ -234,7 +234,7 @@ prompt.
                      e.g. 0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
      - add keystore file path to keyStoreFilePath field 
                      in ccc-ethereum.properties file  
-                     (conch/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
+                     (tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
 
 ---
 
@@ -274,7 +274,7 @@ prompt.
    - `% web3j solidity generate collectPayment.bin collectPayment.abi -p uk.ac.ncl.ethereum.contract -o`
 
 1. copy the generated contract folder to 
-     conch/CCCRest-ear-commons/src/main/java/uk/ac/ncl/ethereum
+     tecomate/CCCRest-ear-commons/src/main/java/uk/ac/ncl/ethereum
 
 
 
