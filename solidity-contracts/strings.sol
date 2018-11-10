@@ -32,6 +32,7 @@
  *      variants that create a new slice and return both; for instance,
  *      `s.splitNew('.')` leaves s unmodified, and returns two values
  *      corresponding to the left and right parts of the string.
+ *
  */
 
 pragma solidity ^0.4.14;

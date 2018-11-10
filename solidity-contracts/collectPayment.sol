@@ -8,8 +8,13 @@
  *           2) getReceipt:  receives a transaction number. It
  *           It returns a string: "Your receipt for Tx " + input transactionNum
  *           after converting it into str.
+ *
  * Programmer: Carlos Molina Jimenez, 14 Jul 2018,
- *              Computer Laboratory, University of Cambridge.
+ *             Computer Laboratory, University of Cambridge.
+ *             Carlos.Molina@cl.cam.ac.uk
+ *
+ * Contributor: Ioannis Sfyrakis, University of Newcastle
+ *              Ioannis.Sfyrakis@ncl.ac.uk
  */
 
 pragma solidity ^0.4.4;
