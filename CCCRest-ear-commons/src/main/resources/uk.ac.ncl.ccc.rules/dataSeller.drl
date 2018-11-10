@@ -26,10 +26,39 @@ global Responder responder;
 
 global CCCLogger cccloger;
 
+/*
+ * Programmer:   Ioannis Sfyrakis, University of Newcastle.
+ *               Ioannis.Sfyrakis@ncl.ac.uk
+ * Date:         31 Jul 2018
+ *   
+ * Program name: dataseller.drl
+ *               This program is written in drools language and
+ *               encodes a smart contract that regulates
+ *               the trading between a data seller and a data buyer.
+ *               All the operations are monitored and enforced by
+ *               a this dataseller.drl contract deployed on the
+ *               the Contract Compliance Checker (CCC) except for the
+ *               payment operation which is enforced by a smart
+ *               contract written in Solidity and deployed on Ethereum.
+ *               See rules "payment received" and "get voucher".
+ *               at the University of Newcastle, except 
+ * Execution:    dataseller.drl is expected to the deployed on the
+ *               CCC as explained in the Tech Rep:
+ *               "Implementation of Smart Contracts Using Hybrid Architectures 
+ *               with On- and Off-Blockchain Components"
+ *               arXiv:1808.00093v1
+ *               https://arxiv.org/pdf/1808.00093.pdf
+ *
+ * Contributor:  Carlos Molina-Jimenez, University of Cambridge
+ *               Carlos.Molina@cl.cam.ac.uk
+ *               
+ */
+
 /* Rule 0: initialize the ROP sets for buyer and seller.
-* This rule is launched only when the contract is set up.
-* the buyer
-* starts with the right to submit a buy request.  */
+ * This rule is launched only when the contract is set up.
+ * the buyer
+ * starts with the right to submit a buy request.  
+ */
 
 rule "Initialization"
 	when
@@ -96,8 +125,12 @@ rule "Buy Request Confirmation"
 		responder.setContractCompliant(true);
 end
 
-// Rule 5: Buyer pays. Obligation is satisfied. The buyer submits on-chain payment and adds right
-// to get a voucher if payment is successful.
+// Rule 5: Buyer pays. 
+// This rule grants buyer the right to get a voucher when
+// the buyer’s obligation to pay is fulfilled.
+// The rule forwards the pay operation to an on-blockchain
+// smart contract written in Solidity. 
+// 
 rule "Payment Received"
 	when
 		$e: Event(type=="BUYPAY", originator=="buyer", responder=="store", status=="success")
@@ -128,7 +161,12 @@ rule "Buy cancelation"
 		responder.setContractCompliant(true);
 end
 
-//  Buyer has the right to claim a voucher from the store, within 5 days of submitting payment.
+
+//
+// Grants a voucher to the buyer if the buyer has the right
+// (’cos it has fulfilled his payment oblig) to get it.
+// It removes the buyer’s right to get a voucher after given
+// it to him or 5 days expiry.
 rule "Get Voucher"
 	when
 		$e: Event(type=="GETVOU", originator=="buyer", responder=="store", status=="success")
@@ -139,6 +177,7 @@ rule "Get Voucher"
 		CCCLogger.logTrace("* Get Voucher rule triggered");
 		responder.setContractCompliant(true);
 end
+
 
 // Rule: Reset state of CCC after last message of sequence
 rule "Reset"
