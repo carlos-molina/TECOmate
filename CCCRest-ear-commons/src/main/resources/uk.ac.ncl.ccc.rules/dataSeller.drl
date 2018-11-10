@@ -147,6 +147,10 @@ rule "Payment Received"
 		responder.setContractCompliant(true);
 end
 
+// This rule handles cancellations submitted by the
+// data buyer. 
+// When cancellation is submitted, the rules removes
+// the buyer's obligation to pay.
 rule "Buy cancelation"
 	when
 		$e: Event(type=="BUYCANC", originator=="buyer", responder=="store", status=="success")
@@ -179,7 +183,15 @@ rule "Get Voucher"
 end
 
 
-// Rule: Reset state of CCC after last message of sequence
+// Rule: Reset state of CCC after last message of sequence:
+// Each sequence of messages (eg, BuyReq->Conf->Pay) is an 
+// execution path from the initial to the final state.
+// The dataseller.drl contract encodes several message
+// sequences. For testing, all of them are submitted by 
+// the client to the CCC hosting the dataseller.drl contract.
+// When a given message sequence is completed, this rule
+// introduces a reset message to separate the sequence
+// from the next one to come.
 rule "Reset"
 	when
 		$e: Event(type=="reset")
