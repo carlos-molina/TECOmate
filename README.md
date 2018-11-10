@@ -267,7 +267,7 @@ prompt.
 1. go to solidity-contracts folder.
 
 1. compile the `collectPayment.sol` contract using the solc compiler:
-   - `% solc collectPayment.sol --bin --abi --optimize -o` 
+   - `% solc collectPayment.sol --bin --abi --optimize -o .` 
 
 1. execute web3j command-line tool to create java wrappers for 
    the `collectPayment.sol` solidity contract:
