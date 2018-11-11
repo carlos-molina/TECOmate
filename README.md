@@ -32,7 +32,7 @@ detailed in
 * the hybrid approach help in meeting some QoS requirements imposed on
 smart contracts that neither on of off blockchain approaches
 can meet individually. 
-
+   
 * application that involve several
 smart contracts running independent on and off blockchain
 components will become common practice in the near future. 
