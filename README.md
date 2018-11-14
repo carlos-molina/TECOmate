@@ -230,11 +230,11 @@ prompt.
    that the account has been created and to see disk location of the
    keystore file:
    - `% geth —rinkeby account list`
-     - copy address of account created 
+     - copy the address of account created 
                      e.g. 0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
-     - add keystore file path to keyStoreFilePath field 
-                     in ccc-ethereum.properties file  
-                     (tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
+     - add the keystore path to the keyStoreFilePath field 
+                     in the ccc-ethereum.properties file found in
+                     tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties
 
 ---
 
