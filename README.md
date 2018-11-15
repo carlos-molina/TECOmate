@@ -221,30 +221,21 @@ prompt.
    - [github.com/ethereum/go-ethereum/wiki/Building-Ethereum](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum)
 
 1. follow instructions to create a new account in rinkeby testnet using:
-   - `% geth —rinkeby account new
+   - `% geth —rinkeby account new`
 
-     INFO [11-14|20:59:48.260] Maximum peer count ETH=25 LES=0 total=25
-
-     Your new account is locked with a password. Please give a password. Do not forget this password.
-
-     Passphrase:
-
-     Repeat passphrase:
-
-     Address: {e174a997183219ac154ee6278a3ba6e346046099}`
    - add account password to accountPassword field in 
           ccc-ethereum.properties file 
           (tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
 
 1. display the list of current accounts in rinkeby testnet to verify 
    that the account has been created and to see disk location of the
-   keystore file:
-   - `% geth —rinkeby account list`
-     - copy the address of account created 
-                     e.g. 0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
-     - add the keystore path to the keyStoreFilePath field 
-                     in the ccc-ethereum.properties file found in
-                     tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties
+   keystore file. You will need this information complete the  population
+   of the parameters of the ccc-ethereum.properties file:
+   - `% geth —rinkeby account list` 
+     - copy the address of account created  to the contractAddress field of the 
+       tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties file, the address looks like
+                     0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
+     - add the keystore path to the keyStoreFilePath field  od the ccc-ethereum.properties file.
 
 ---
 
