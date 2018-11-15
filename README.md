@@ -221,11 +221,16 @@ prompt.
    - [github.com/ethereum/go-ethereum/wiki/Building-Ethereum](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum)
 
 1. follow instructions to create a new account in rinkeby testnet using:
-   - `% geth —rinkeby account new<br/>
-     INFO [11-14|20:59:48.260] Maximum peer count ETH=25 LES=0 total=25<br/>
+   - `% geth —rinkeby account new
+
+     INFO [11-14|20:59:48.260] Maximum peer count ETH=25 LES=0 total=25
+
      Your new account is locked with a password. Please give a password. Do not forget this password.
+
      Passphrase:
+
      Repeat passphrase:
+
      Address: {e174a997183219ac154ee6278a3ba6e346046099}`
    - add account password to accountPassword field in 
           ccc-ethereum.properties file 
