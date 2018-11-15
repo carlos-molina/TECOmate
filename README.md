@@ -235,7 +235,8 @@ prompt.
      - copy the address of the account created  to the contractAddress field of the 
        ccc-ethereum.properties file, the address looks like
                      0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
-     - copy the keystore path to the keyStoreFilePath field  of the ccc-ethereum.properties file.
+     - copy the keystore path to the keyStoreFilePath field  of the ccc-ethereum.properties file. It looks like
+                     /Users/carlosmolina/Library/Ethereum/rinkeby/keystore ...
 
 ---
 
