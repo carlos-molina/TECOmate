@@ -223,19 +223,19 @@ prompt.
 1. follow instructions to create a new account in rinkeby testnet using:
    - `% geth —rinkeby account new`
 
-   - add account password to accountPassword field in 
-          ccc-ethereum.properties file 
-          (tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties)
+   - type the password (passphrase) of the account created to accountPassword field of the
+          ccc-ethereum.properties file located as 
+          tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties
 
 1. display the list of current accounts in rinkeby testnet to verify 
    that the account has been created and to see disk location of the
    keystore file. You will need this information complete the  population
    of the parameters of the ccc-ethereum.properties file:
    - `% geth —rinkeby account list` 
-     - copy the address of account created  to the contractAddress field of the 
+     - copy the address of the account created  to the contractAddress field of the 
        tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties file, the address looks like
                      0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
-     - add the keystore path to the keyStoreFilePath field  od the ccc-ethereum.properties file.
+     - copy the keystore path to the keyStoreFilePath field  of the ccc-ethereum.properties file.
 
 ---
 
