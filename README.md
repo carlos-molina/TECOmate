@@ -233,7 +233,7 @@ prompt.
    of the parameters of the ccc-ethereum.properties file:
    - `% geth —rinkeby account list` 
      - copy the address of the account created  to the contractAddress field of the 
-       tecomate/CCCRest-ear-commons/src/main/resources/ccc-ethereum.properties file, the address looks like
+       ccc-ethereum.properties file, the address looks like
                      0x9a6944f1b5f3368c53966415dc6ef66f3a7338d3
      - copy the keystore path to the keyStoreFilePath field  of the ccc-ethereum.properties file.
 
