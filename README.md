@@ -249,7 +249,10 @@ prompt.
 1. choose rinkeby testnet.
 
 1. import to metamask the account created previously using geth:
-     - use `% geth —rinkeby acount list`  to find where the keystore file is stored
+     - use `% geth —rinkeby acount list`  to find where the keystore file is stored. Select the
+       `json file` option as opposed to `Private key` in from the import menu. In the
+        `Enter password` type the Passprase used when you created (eg with geth) the account that
+        you are importing.
 
 1. buy ether tokens from rinkeby faucet [www.rinkeby.io](https://www.rinkeby.io/#faucet).
 
