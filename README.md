@@ -42,7 +42,7 @@ There is a large range of potential applications
 of an hybrid architecture like this. Its salient 
 feature is the off-blockchain enforcing capability that the
 Contract Compliance Checker can provide. For example, 
-the off-blockchain contract compliance checker can be used 
+the off-blockchain Contract Compliance Checker can be used 
 for offering several off-blockchain services to on--blockchain 
 smart contracts: computation, data storage, data provision, 
 event notification, trust and monitoring/enforcement of 
