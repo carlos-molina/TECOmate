@@ -43,15 +43,17 @@ of an hybrid architecture like this. Its salient
 feature is the off-blockchain enforcing capability that the
 Contract Compliance Checker can provide. For example, 
 the off-blockchain Contract Compliance Checker can be used 
-for offering several off-blockchain services to on--blockchain 
+for offering several off-blockchain services to on-blockchain 
 smart contracts: computation, data storage, data provision, 
 event notification, trust and monitoring/enforcement of 
-polices and regulations. Basically, the Contract Compliance
+polices and regulations. 
+
+Basically, the Contract Compliance
 Checker can act as a contract-aware bridge between the
-on--blockchain and off-blockchain worlds. It can send
-data and events to on--blockchain smart contracts only
+on-blockchain and off-blockchain worlds. It can send
+data and events to on-blockchain smart contracts only
 when some conditions hold. Complementary, it can
-receive data and events from on--blockchain
+receive data and events from on-blockchain
 smart contracts and react (perform some operations)
 or ignore them only when some conditions hold.
 
