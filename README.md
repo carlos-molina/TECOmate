@@ -56,7 +56,8 @@ when some conditions hold. Complementary, it can
 receive data and events from on-blockchain
 smart contracts and react (perform some operations)
 or ignore them only when some conditions hold.
-For example, the hybrid architecture can be used 
+
+To mention a specific example, the hybrid architecture can be used 
 to address the conflict between the indelible append-only data model 
 that underpins blockchains and the right to request 
 deletion of personal data granted by the EU General 
