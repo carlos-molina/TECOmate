@@ -56,9 +56,17 @@ when some conditions hold. Complementary, it can
 receive data and events from on-blockchain
 smart contracts and react (perform some operations)
 or ignore them only when some conditions hold.
-
-
-
+For example, the hybrid architecture can be used 
+to address the conflict between the indelible append-only data model 
+that underpins blockchains and the right to request 
+deletion of personal data granted by the EU General 
+Data Protection Regulation (GDPR) of May 2018. In this
+scenario, the Contract Compliance Checker can be
+loaded with a smart contract that stipulates
+the conditions that personal data need to
+satisfy before becoming accessible to 
+on-blockchain smart contracts and stored
+in indelible blocks.
 
 ## Example of a smart contract
 Let us use the following business contract agreed upon
