@@ -37,6 +37,27 @@ can meet individually.
 smart contracts running independent on and off blockchain
 components will become common practice in the near future. 
 
+## Motivation and potential applications 
+There is a large range of potential applications 
+of an hybrid architecture like this. Its salient 
+feature is the off-blockchain enforcing capability that the
+Contract Compliance Checker can provide. For example, 
+the off-blockchain contract compliance checker can be used 
+for offering several off-blockchain services to on--blockchain 
+smart contracts: computation, data storage, data provision, 
+event notification, trust and monitoring/enforcement of 
+polices and regulations. Basically, the Contract Compliance
+Checker can act as a contract-aware bridge between the
+on--blockchain and off-blockchain worlds. It can send
+data and events to on--blockchain smart contracts only
+when some conditions hold. Complementary, it can
+receive data and events from on--blockchain
+smart contracts and react (perform some operations)
+or ignore them only when some conditions hold.
+
+
+
+
 ## Example of a smart contract
 Let us use the following business contract agreed upon
 between a buyer and a seller of personal data and 
