@@ -87,8 +87,8 @@ hybrid architecture is shown in the figure:
 </p>
 
 As shown in the figure, the split of the contractual clauses
-result in two contract components (**on blockchain smart contract**
-and **off blockchain smart contract**) that interact with each other 
+result in two contract components (**on-blockchain smart contract**
+and **off-blockchain smart contract**) that interact with each other 
 to enforce the original contract written in English.
 
 
@@ -120,7 +120,8 @@ It is worth remarking that the bridging functionality
 performed by the off-blockchain smart contract is
 similar to that of the *Town Crier* discussed
 in the [Town Crier: An Authenticated Data Feed for Smart 
-Contracts](https://eprint.iacr.org/2016/168.pdf "Town Crier eprint ver")).
+Contracts](https://eprint.iacr.org/2016/168.pdf "Town Crier eprint ver"),
+CCS'16, Fan Zhang et. al.
 However, in addition to bridging the on-blockchain
 and off-blockchain worlds, the off-blockchain smart
 contract performs enforcing functions.
