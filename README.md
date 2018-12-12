@@ -37,37 +37,6 @@ can meet individually.
 smart contracts running independent on and off blockchain
 components will become common practice in the near future. 
 
-## Motivation and potential applications 
-There is a large range of potential applications 
-of an hybrid architecture like this. Its salient 
-feature is the off-blockchain enforcing capability that the
-Contract Compliance Checker can provide. For example, 
-the off-blockchain Contract Compliance Checker can be used 
-for offering several off-blockchain services to on-blockchain 
-smart contracts: computation, data storage, data provision, 
-event notification, trust and monitoring/enforcement of 
-polices and regulations. 
-
-Basically, the Contract Compliance
-Checker can act as a contract-aware bridge between the
-on-blockchain and off-blockchain worlds. It can send
-data and events to on-blockchain smart contracts only
-when some conditions hold. Complementary, it can
-receive data and events from on-blockchain
-smart contracts and react (perform some operations)
-or ignore them only when some conditions hold.
-
-To mention a specific example, the hybrid architecture can be used 
-to address the conflict between the indelible append-only data model 
-that underpins blockchains and the right to request 
-deletion of personal data granted by the EU General 
-Data Protection Regulation (GDPR) of May 2018. In this
-scenario, the Contract Compliance Checker can be
-loaded with a smart contract that stipulates
-the conditions that personal data need to
-satisfy before becoming accessible to 
-on-blockchain smart contracts and stored
-in indelible blocks.
 
 ## Example of a smart contract
 Let us use the following business contract agreed upon
@@ -107,7 +76,7 @@ that results from failures to meet obligations before
 the expiration of deadlines.
 
 ### On and off blockchain enforcemement
-Let us assume henceforth that the buter and the store have agreed to use a 
+Let us assume henceforth that the buyer and the store have agreed to use a 
 hybrid architecture where the operation *pay* will be enforced on blockchain 
 and all other operations, off blockchain. An abstract view of the corresponding 
 hybrid architecture is shown in the figure:
@@ -118,10 +87,59 @@ hybrid architecture is shown in the figure:
 </p>
 
 As shown in the figure, the split of the contractual clauses
-result in two contract components (**on blockchain contract**
-and **off blockchain contract**) that interact with each other to enforce the
-original contract written in English.
+result in two contract components (**on blockchain smart contract**
+and **off blockchain smart contract**) that interact with each other 
+to enforce the original contract written in English.
 
+
+## Motivation and potential applications 
+There is a large range of potential applications 
+of an hybrid architecture like this. Its salient 
+feature is the off-blockchain enforcing capability that the
+off-blockchain smart contract (hosted by our
+Contract Compliance Checker) can provide.
+
+For example, the off-blockchain smart contract can be used 
+for offering several off-blockchain services to on-blockchain 
+smart contracts: computation, data storage, data provision, 
+event notification, trust and monitoring/enforcement of 
+polices and regulations. 
+
+Basically, the off-blockchain smart contract 
+can act as a contract-aware bridge between the
+on-blockchain and off-blockchain worlds (see figure
+above). It can feed
+data and events to on-blockchain smart contracts only
+when some conditions hold. Complementary, it can
+receive data and events (for example, the occurrence of the *pay*
+operation) from on-blockchain
+smart contracts and react (perform some operations)
+or ignore them only when some conditions hold.
+
+It is worth remarking that the bridging functionality
+performed by the off-blockchain smart contract is
+similar to that of the *Town Crier* discussed
+in the [Town Crier: An Authenticated Data Feed for Smart 
+Contracts](https://eprint.iacr.org/2016/168.pdf "Town Crier eprint ver")).
+However, in addition to bridging the on-blockchain
+and off-blockchain worlds, the off-blockchain smart
+contract performs enforcing functions.
+
+
+To mention a specific application example, 
+the hybrid architecture can be used 
+to address the conflict between the indelible append-only data model 
+that underpins blockchains and the right to request 
+deletion of personal data granted by the EU General 
+Data Protection Regulation (GDPR) of May 2018. In this
+scenario, the Contract Compliance Checker can be
+loaded with a smart contract that stipulates
+the conditions that personal data need to
+satisfy before becoming accessible to 
+on-blockchain smart contracts and stored
+in indelible blocks.
+
+ 
 ## Hybrid architecture, technologies tools and mathematics
 The hybrid architecture that we have implemented for
 the enforcement of smart contracts like the example
