@@ -6,7 +6,8 @@
 
 The word **tecomate** is pronunced [te.koˈma.te] in Spanish  
 and probably [te.koˈmeit] in English and is the name of tree 
-that grows in Mexico and Central American countries. 
+that grows in Mexico and Central American countries. In Colombia
+it is called totumo. 
 <p align="center">
   <img src="./figures/tecomate.png" 
    width="300" title="tecomate tree">
