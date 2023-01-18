@@ -16,7 +16,7 @@ it is called totumo.
 
 We use **TECOmate** to name our Git repository that hosts the implementation
 of an hybrid achitecture for the enforcement of smart contracts. 
-Hybrid means that it is composed of on and off blockchain
+Hybrid means that it is composed of on-blockchain and off-blockchain
 components. 
 
 **The main idea:** split the clauses of the smart
